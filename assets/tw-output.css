@@ -806,9 +806,6 @@
   .max-w-screen {
     max-width: 100vw;
   }
-  .max-w-screen-lg {
-    max-width: var(--breakpoint-lg);
-  }
   .min-w-screen {
     min-width: 100vw;
   }
