@@ -1,1 +1,3 @@
 @import "tailwindcss";
+/* TODO - DaisyUI is breaking the footer? Would be good to know why.  */
+@plugin "daisyui";
