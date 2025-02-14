@@ -10,10 +10,10 @@
 {
   "current": {
     "logo_width": 90,
-    "type_header_font": "dm_sans_n7",
+    "type_header_font": "itc_stone_serif_n6",
     "heading_scale": 100,
-    "type_body_font": "monotype_new_clarendon_n5",
-    "body_scale": 105,
+    "type_body_font": "archivo_n4",
+    "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
