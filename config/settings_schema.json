@@ -41,10 +41,8 @@
         "id": "color_schemes",
         "definition": [
           {
-            "type": "color",
-            "id": "background",
-            "label": "t:settings_schema.colors.settings.background.label",
-            "default": "#FFFFFF"
+            "type":"header",
+            "content": "BG Gradient"
           },
           {
             "type": "color_background",
@@ -53,28 +51,137 @@
             "info": "t:settings_schema.colors.settings.background_gradient.info"
           },
           {
+            "type":"header",
+            "content": "Base Colors"
+          },
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Base Color / Background",
+            "default": "#FFFFFF"
+          },
+
+          {
             "type": "color",
             "id": "text",
-            "label": "t:settings_schema.colors.settings.text.label",
+            "label": "Base Content / Text",
             "default": "#121212"
+          },
+          {
+            "type":"header",
+            "content": "Neutral Colors"
+          },
+          {
+            "type": "color",
+            "id": "neutral_color",
+            "label": "Neutral Color",
+            "default": "#09090B"
+          },
+
+          {
+            "type": "color",
+            "id": "neutral_color_content",
+            "label": "Neutral Content",
+            "default": "#E4E4E7"
+          },
+          {
+            "type":"header",
+            "content": "Primary Colors"
           },
           {
             "type": "color",
             "id": "button",
-            "label": "t:settings_schema.colors.settings.button_background.label",
-            "default": "#121212"
+            "label": "Primary Color / Button",
+            "default": "#422AD5"
           },
           {
             "type": "color",
             "id": "button_label",
-            "label": "t:settings_schema.colors.settings.button_label.label",
-            "default": "#FFFFFF"
+            "label": "Primary Content / Button Text",
+            "default": "#E0E7FF"
+          },
+          {
+            "type":"header",
+            "content": "Secondary Colors"
           },
           {
             "type": "color",
             "id": "secondary_button_label",
-            "label": "t:settings_schema.colors.settings.secondary_button_label.label",
-            "default": "#121212"
+            "label": "Secondary Color / Outline Button",
+            "default": "#F42F98"
+          },
+          {
+            "type": "color",
+            "id": "secondary_color_content",
+            "label": "Secondary Content",
+            "default": "#F8E4F0"
+          },          {
+            "type":"header",
+            "content": "Accent Colors"
+          },
+          {
+            "type": "color",
+            "id": "accent_color",
+            "label": "Accent Color",
+            "default": "#02D3BA"
+          },
+          {
+            "type": "color",
+            "id": "accent_color_content",
+            "label": "Accent Content",
+            "default": "#064D49"
+          },
+          {
+            "type":"header",
+            "content": "Utility Colors"
+          },
+          {
+            "type": "color",
+            "id": "info_color",
+            "label": "Info Color",
+            "default": "#02BAFE"
+          },
+          {
+            "type": "color",
+            "id": "info_color_content",
+            "label": "Info Content",
+            "default": "#042E49"
+          },
+          {
+            "type": "color",
+            "id": "success_color",
+            "label": "Success Color",
+            "default": "#01D390"
+          },
+          {
+            "type": "color",
+            "id": "success_color_content",
+            "label": "Success Content",
+            "default": "#004C39"
+          },
+          {
+            "type": "color",
+            "id": "warning_color",
+            "label": "Warning Color",
+            "default": "#FCB701"
+          },
+          {
+            "type": "color",
+            "id": "warning_color_content",
+            "label": "Warning Content",
+            "default": "#783205"
+          },
+          {
+            "type": "color",
+            "id": "error_color",
+            "label": "Error Color",
+            "default": "#FF627D"
+          },
+          {
+            "type": "color",
+            "id": "error_color_content",
+            "label": "Error Content",
+            "default": "#4D0218"
           },
           {
             "type": "color",

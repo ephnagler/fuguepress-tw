@@ -271,14 +271,56 @@
                       }
     {% endstyle %}
 
-    {% comment %} {{ 'base.css' | asset_url | stylesheet_tag }} {% endcomment %}
     {{ 'tw-output.css' | asset_url | stylesheet_tag }}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {% style %}
-      {{ scheme_classes | prepend: 'body' }} {
-          color: rgba(var(--color-base-content), 0.75);
-          background-color: rgb(var(--color-base-100));
+      body {
+        color: rgba(var(--color-base-content), 0.75);
+        background-color: rgb(var(--color-base-100));
       }
+
+      {% assign semantic_colors = 'base,primary,secondary,accent,neutral,info,success,warning,error' | split: ',' %}
+
+      {% for color in semantic_colors %}
+        .color-{{ color }} {
+          color:  var(--color-{{ color }}-content);
+          background-color: var(--color-{{ color }});
+        }
+      {% endfor %}
+            {% comment %}
+              {% assign scheme_classes = scheme_classes | append: ', .color-' | append: color %}
+              {% if forloop.index == 1 -%}
+                :root,
+              {%- endif %}
+              .color-{{ color }} {
+                --color-background: var(--color-{{color}});
+                --gradient-background: var(--color-{{color}});
+              {% comment %}
+              {% if scheme.settings.background_gradient != empty %}
+                --gradient-background: {{ scheme.settings.background_gradient }};
+              {% else %}
+                --gradient-background: {{ scheme.settings.background }};
+              {% endif %}
+              {% endcomment %}
+              --color-foreground: var(--color-{{color}}-content);
+              --color-background-contrast: var(--color-{{color}});
+              --color-shadow: var(--color-{{color}});
+              --color-button: var(--color-{{color}}-content);
+              --color-button-text: var(--color-{{color}});
+              --color-secondary-button: var(--color-{{color}}-content);
+              --color-secondary-button-text: var(--color-{{color}}-content);blue };
+              --color-link: var(--color-{{color}}-content);
+              --color-badge-foreground: var(--color-{{color}}-content);
+              --color-badge-background: var(--color-{{color}}-content);
+              --color-badge-border: var(--color-{{color}}-content);
+              --payment-terms-background-color: var(--color-{{color}}-content);
+            {% endfor %}
+                {{ scheme_classes }} {
+                  color: var(--color-foreground);
+                  background-color: var(--color-background);
+                }
+      {% endcomment %}
     {% endstyle %}
 
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
