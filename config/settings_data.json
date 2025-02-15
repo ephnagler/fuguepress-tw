@@ -10,6 +10,7 @@
 {
   "current": {
     "logo_width": 90,
+    "dark-scheme": "scheme-4",
     "type_header_font": "itc_stone_serif_n6",
     "heading_scale": 100,
     "type_body_font": "archivo_n4",
