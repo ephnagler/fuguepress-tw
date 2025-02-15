@@ -269,8 +269,9 @@
       {% assign semantic = "base,neutral,primary,secondary,accent,info,success,warning,error" | split: "," %}
       {% for theme in semantic %}
         .color-{{ theme }}{
-          color: rbg(var(--color-{{ theme }}-content));
-          background-color: rbg(var(--color-{{ theme }}));
+          --color-foreground: var(--color-{{ theme }}-content);
+          color: rgb(var(--color-{{ theme }}-content));
+          background-color: rgb(var(--color-{{ theme }}));
         }
         {% endfor %}
     {% endstyle %}
