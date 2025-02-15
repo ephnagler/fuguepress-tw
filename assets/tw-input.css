@@ -6,6 +6,7 @@
 @plugin "daisyui" {
   themes: false;
 }
+
 @plugin "daisyui/theme" {
   name: 'shopify-light';
   default: true; /* set as default */
@@ -30,3 +31,4 @@
   --color-secondary: var(--dark-secondary);
   --color-secondary-content: var(--dark-secondary-content);
 }
+
