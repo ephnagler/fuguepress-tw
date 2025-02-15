@@ -102,6 +102,23 @@
     ]
   },
   {
+    "name":"Light & Dark Schemes",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id":"light-scheme",
+        "default":"scheme-1",
+        "label":"Light Color Scheme"
+      },
+      {
+        "type": "color_scheme",
+        "id":"dark-scheme",
+        "default":"scheme-2",
+        "label":"Dark Color Scheme"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {

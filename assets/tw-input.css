@@ -1,3 +1,37 @@
 @import "tailwindcss";
+@theme {
+    --color-*: initial;
+  }
 /* TODO - DaisyUI is breaking the footer? Would be good to know why.  */
-@plugin "daisyui";
+@plugin "daisyui"{
+    themes:false;
+}
+@plugin "daisyui/theme" {
+    name: "shopify-light";
+    default: true; /* set as default */
+    prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: light; /* color of browser-provided UI */
+  
+    --color-base-100: var(--light-base)
+    --color-base-content: var(--light-base-content)
+    --color-primary: var(--light-primary)
+    --color-primary-content: var(--light-primary-content)
+    --color-secondary: var(--light-secondary)
+    --color-secondary-content: var(--light-secondary-content)
+   
+  }
+
+  @plugin "daisyui/theme" {
+    name: "shopify-dark";
+    default: false; /* set as default */
+    prefersdark: true; /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: dark; /* color of browser-provided UI */
+  
+    --color-base-100: var(--dark-base)
+    --color-base-content: var(--dark-base-content)
+    --color-primary: var(--dark-primary)
+    --color-primary-content: var(--dark-primary-content)
+    --color-secondary: var(--dark-secondary)
+    --color-secondary-content: var(--dark-secondary-content)
+   
+  }
