@@ -9,27 +9,26 @@
 
 @plugin "daisyui/theme" {
   name: 'shopify-light';
-  default: true; /* set as default */
   color-scheme: light; /* color of browser-provided UI */
 
   --color-base-100: var(--shopify-light-base-100);
   --color-base-content: var(--shopify-light-base-content);
-  --color-neutral: var(--shopify-lite-neutral);
-  --color-neutral-content: var(--shopify-lite-neutral-content);
+  --color-neutral: var(--shopify-light-neutral);
+  --color-neutral-content: var(--shopify-light-neutral-content);
   --color-primary: var(--shopify-light-primary);
   --color-primary-content: var(--shopify-light-primary-content);
-  --color-secondary: var(--shopify-lite-secondary);
-  --color-secondary-content: var(--shopify-lite-secondary-content);
-  --color-accent: var(--shopify-lite-accent);
-  --color-accent-content: var(--shopify-lite-accent-content);
-  --color-info: var(--shopify-lite-info);
-  --color-info-content: var(--shopify-lite-info-content);
-  --color-success: var(--shopify-lite-success);
-  --color-success-content: var(--shopify-lite-success-content);
-  --color-warning: var(--shopify-lite-warning);
-  --color-warning-content: var(--shopify-lite-warning-content);
-  --color-error: var(--shopify-lite-error);
-  --color-error-content: var(--shopify-lite-error-content);
+  --color-secondary: var(--shopify-light-secondary);
+  --color-secondary-content: var(--shopify-light-secondary-content);
+  --color-accent: var(--shopify-light-accent);
+  --color-accent-content: var(--shopify-light-accent-content);
+  --color-info: var(--shopify-light-info);
+  --color-info-content: var(--shopify-light-info-content);
+  --color-success: var(--shopify-light-success);
+  --color-success-content: var(--shopify-light-success-content);
+  --color-warning: var(--shopify-light-warning);
+  --color-warning-content: var(--shopify-light-warning-content);
+  --color-error: var(--shopify-light-error);
+  --color-error-content: var(--shopify-light-error-content);
 }
 
 @plugin "daisyui/theme" {
