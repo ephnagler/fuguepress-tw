@@ -1892,9 +1892,6 @@
   .hidden {
     display: none;
   }
-  .inline {
-    display: inline;
-  }
   .inline-flex {
     display: inline-flex;
   }
@@ -1969,6 +1966,9 @@
 @layer base {
   [data-theme='shopify-light'] {
     --color-foreground: var(--color-base-content);
+    body {
+      color: rgb(var(--color-base-content));
+    }
   }
   [data-theme='shopify-dark'] {
     --color-foreground: var(--color-base-content);
@@ -4882,8 +4882,22 @@ video {
     color-scheme: light;
     --color-base-100: var(--shopify-light-base-100);
     --color-base-content: var(--shopify-light-base-content);
+    --color-neutral: var(--shopify-lite-neutral);
+    --color-neutral-content: var(--shopify-lite-neutral-content);
     --color-primary: var(--shopify-light-primary);
     --color-primary-content: var(--shopify-light-primary-content);
+    --color-secondary: var(--shopify-lite-secondary);
+    --color-secondary-content: var(--shopify-lite-secondary-content);
+    --color-accent: var(--shopify-lite-accent);
+    --color-accent-content: var(--shopify-lite-accent-content);
+    --color-info: var(--shopify-lite-info);
+    --color-info-content: var(--shopify-lite-info-content);
+    --color-success: var(--shopify-lite-success);
+    --color-success-content: var(--shopify-lite-success-content);
+    --color-warning: var(--shopify-lite-warning);
+    --color-warning-content: var(--shopify-lite-warning-content);
+    --color-error: var(--shopify-lite-error);
+    --color-error-content: var(--shopify-lite-error-content);
   }
 }
 @layer base {
@@ -4891,8 +4905,22 @@ video {
     color-scheme: dark;
     --color-base-100: var(--shopify-dark-base-100);
     --color-base-content: var(--shopify-dark-base-content);
+    --color-neutral: var(--shopify-dark-neutral);
+    --color-neutral-content: var(--shopify-dark-neutral-content);
     --color-primary: var(--shopify-dark-primary);
     --color-primary-content: var(--shopify-dark-primary-content);
+    --color-secondary: var(--shopify-dark-secondary);
+    --color-secondary-content: var(--shopify-dark-secondary-content);
+    --color-accent: var(--shopify-dark-accent);
+    --color-accent-content: var(--shopify-dark-accent-content);
+    --color-info: var(--shopify-dark-info);
+    --color-info-content: var(--shopify-dark-info-content);
+    --color-success: var(--shopify-dark-success);
+    --color-success-content: var(--shopify-dark-success-content);
+    --color-warning: var(--shopify-dark-warning);
+    --color-warning-content: var(--shopify-dark-warning-content);
+    --color-error: var(--shopify-dark-error);
+    --color-error-content: var(--shopify-dark-error-content);
   }
 }
 @keyframes spin {
